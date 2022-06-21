@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Ifood" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="colorPrimaryDark">#A50A15</item>
+        <item name="colorAccent">@color/vermelho_vinho</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="botaoPadrao" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#ff404e</item>
+        <item name="colorButtonNormal">@color/vermelho_vinho</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>
