@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="editCadastroEmail" type="id" />
-    <item name="editCadastroSenha" type="id" />
+    <item name="editProdutoNome" type="id" />
+    <item name="editProdutoDescricao" type="id" />
     <item name="textView" type="id" />
     <item name="switchAcesso" type="id" />
     <item name="buttonAcesso" type="id" />

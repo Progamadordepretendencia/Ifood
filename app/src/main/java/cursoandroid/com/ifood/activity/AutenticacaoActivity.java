@@ -177,8 +177,8 @@ public class AutenticacaoActivity extends AppCompatActivity {
     }
 
     private void inicializaComponentes(){
-        campoEmail = findViewById(R.id.editCadastroEmail);
-        campoSenha = findViewById(R.id.editCadastroSenha);
+        campoEmail = findViewById(R.id.editProdutoNome);
+        campoSenha = findViewById(R.id.editProdutoDescricao);
         botaoAcessar = findViewById(R.id.buttonAcesso);
         tipoAcesso = findViewById(R.id.switchAcesso);
         tipoUsuario = findViewById(R.id.switchTipoUsuario);
