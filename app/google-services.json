@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "649617618702",
+    "firebase_url": "https://ifood-305eb-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "ifood-305eb",
+    "storage_bucket": "ifood-305eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649617618702:android:6a53b1e2a2e54368b9495f",
+        "android_client_info": {
+          "package_name": "cursoandroid.com.ifood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649617618702-7qiq1q3ffjoumo9vig31bf50fqdks7u7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cursoandroid.com.ifood",
+            "certificate_hash": "9cd0c351bba2e2043a93868f4bafae11190b5313"
+          }
+        },
+        {
+          "client_id": "649617618702-9ljlprfdkqfj4jco4vrui5cupu7uqat9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArvBKLi4BcKYtAT7ImAsAICW8HNdy62UY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649617618702-9ljlprfdkqfj4jco4vrui5cupu7uqat9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
