@@ -4,9 +4,11 @@ import android.util.Log;
 
 import com.google.firebase.database.DatabaseReference;
 
+import java.io.Serializable;
+
 import cursoandroid.com.ifood.helper.ConfiguravaoFirebase;
 
-public class Empresa {
+public class Empresa implements Serializable {
     private  String idUsuario;
     private  String urlImagem;
     private  String nome;

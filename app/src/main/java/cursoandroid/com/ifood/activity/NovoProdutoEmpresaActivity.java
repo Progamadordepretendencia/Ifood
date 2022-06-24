@@ -70,8 +70,8 @@ public class NovoProdutoEmpresaActivity extends AppCompatActivity {
                 .show();
     }
     private void inicializarComponentes(){
-       editProdutoNome = findViewById(R.id.editProdutoNome);
-       editProdutoDescricao = findViewById(R.id.editProdutoDescricao);
+       editProdutoNome = findViewById(R.id.editUsuarioNome);
+       editProdutoDescricao = findViewById(R.id.editUsuarioEndereco);
         editProdutoPreco = findViewById(R.id.editProdutoPreco);
 
     }

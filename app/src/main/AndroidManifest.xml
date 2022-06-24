@@ -14,9 +14,13 @@
         android:theme="@style/Theme.Ifood"
         tools:targetApi="31">
         <activity
+            android:name=".activity.CardapioActivity"
+            android:parentActivityName=".activity.HomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.ConfiguracoesUsuarioActivity"
             android:exported="false"
-            android:parentActivityName=".activity.HomeActivity"/>
+            android:parentActivityName=".activity.HomeActivity" />
         <activity
             android:name=".activity.EmpresaActivity"
             android:exported="false" />
@@ -28,8 +32,7 @@
             android:exported="false" />
         <activity
             android:name=".activity.SplashActivity"
-            android:exported="true" >
-
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -42,10 +45,7 @@
         <activity
             android:name=".activity.NovoProdutoEmpresaActivity"
             android:exported="false"
-            android:parentActivityName=".activity.EmpresaActivity">
-
-        </activity>
-
+            android:parentActivityName=".activity.EmpresaActivity"></activity>
     </application>
 
 </manifest>
