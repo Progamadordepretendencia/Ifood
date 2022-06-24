@@ -22,7 +22,7 @@ public class Empresa {
                 .child(getIdUsuario());
         empresaRef.setValue(this)
                 .addOnSuccessListener(a -> {
-                    Log.d("FIREBASE", "Upado com sucesso: "+ a.toString());
+                    Log.d("FIREBASE", "Upado com sucesso: ");
                 })
                 .addOnFailureListener(error -> Log.d("FIREBASE", "Error: "+ error.getMessage()));
     }

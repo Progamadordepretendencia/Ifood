@@ -78,7 +78,7 @@ public class ConfiguracoesEmpresaActivity extends AppCompatActivity {
     }
     private  void recuperarDadosEmpresa(){
         DatabaseReference empresaRef = firebaseRef
-                .child("empresas")
+                .child("empresa")
                 .child(idUsuarioLogado);
         empresaRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -88,7 +88,7 @@ public class ConfiguracoesEmpresaActivity extends AppCompatActivity {
                     Empresa empresa = snapshot.getValue(Empresa.class);
                     editEmpresaNome.setText(empresa.getNome());
                     editEmpresaCategoria.setText(empresa.getCategoria());
-                    editEmpresaTaxa.setText((int) empresa.getPrecoEntrega());
+                    editEmpresaTaxa.setText( Double.toString(empresa.getPrecoEntrega()));
                     editEmpresaTempo.setText(empresa.getTempo());
 
                     urlImagemSelecionada = empresa.getUrlImagem();
@@ -187,7 +187,7 @@ public class ConfiguracoesEmpresaActivity extends AppCompatActivity {
                     })
                             .addOnSuccessListener(taskSnapshot -> imagemRef.getDownloadUrl().addOnCompleteListener(task -> {
                                 Uri url = task.getResult();
-                                urlImagemSelecionada = url.getPath();
+                                urlImagemSelecionada = url.toString();
                                 Toast.makeText( ConfiguracoesEmpresaActivity.this,
                                         "Sucesso ao fazer upload da imagem",
                                         Toast.LENGTH_SHORT).show();

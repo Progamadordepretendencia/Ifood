@@ -6,19 +6,42 @@ import cursoandroid.com.ifood.helper.ConfiguravaoFirebase;
 
 public class Produto {
     private String idUsuario;
+    private String idProduto;
     private String nome;
     private String descricao;
     private Double preco;
 
     public Produto() {
+        DatabaseReference firebaseRef = ConfiguravaoFirebase.getFirebase();
+        DatabaseReference produtoRef = firebaseRef
+                .child("produtos");
+
+        setIdProduto(produtoRef.push().getKey());
     }
     public  void salvar(){
         DatabaseReference firebaseRef = ConfiguravaoFirebase.getFirebase();
         DatabaseReference produtoRef = firebaseRef
                 .child("produtos")
                 .child(getIdUsuario())
-                .push();
+                .child(getIdProduto());
         produtoRef.setValue(this);
+    }
+
+    public  void remover(){
+        DatabaseReference firebaseRef = ConfiguravaoFirebase.getFirebase();
+        DatabaseReference produtoRef = firebaseRef
+                .child("produtos")
+                .child(getIdUsuario())
+                .child(getIdProduto());
+        produtoRef.removeValue();
+    }
+
+    public String getIdProduto() {
+        return idProduto;
+    }
+
+    public void setIdProduto(String idProduto) {
+        this.idProduto = idProduto;
     }
 
     public String getIdUsuario() {
