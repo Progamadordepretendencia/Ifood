@@ -95,7 +95,7 @@ public class PedidosActivity extends AppCompatActivity {
                 .child(idEmpresa);
 
         Query pedidoPesquisa = pedidoRef.orderByChild("status")
-                .equalTo("confirmado");
+                .equalTo("Confirmado");
 
         pedidoPesquisa.addValueEventListener(new ValueEventListener() {
             @Override
